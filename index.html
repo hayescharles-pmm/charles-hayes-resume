@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///C:/Users/chatl/Downloads/charles_hayes_resume_9.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charles Hayes: Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./Charles Hayes_ Resume_files/css2" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --charcoal: #0D0D0D;
+    --charcoal-mid: #0D0D0D;
+    --stone: #6B6458;
+    --stone-light: #9A9088;
+    --caramel: #8B7355;
+    --caramel-light: #C4A97D;
+    --paper: #ffffff;
+    --rule: #BEBAB2;
+    --page-width: 8.5in;
+    --page-height: 11in;
+    --margin-h: 0.6in;
+    --margin-v: 0.35in;
+  }
+
+  html {
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    background: #ccc;
+  }
+
+  body {
+    font-family: 'Spectral', Georgia, serif;
+    background: #f0ede8;
+    color: #0D0D0D;
+    width: var(--page-width);
+    min-height: var(--page-height);
+    margin: 0.4in auto;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  }
+
+  /* ---- HEADER ---- */
+  .resume-header {
+    background: var(--charcoal);
+    padding: var(--margin-v) var(--margin-h) 0;
+  }
+  .header-inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: end;
+    padding-bottom: 20px;
+  }
+  .header-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--paper);
+    letter-spacing: -0.3px;
+    line-height: 1.1;
+  }
+  .header-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--stone-light);
+    margin-top: 6px;
+  }
+  .header-contact {
+    text-align: right;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--stone-light);
+    line-height: 1.8;
+  }
+  .header-contact a {
+    color: var(--caramel-light);
+    text-decoration: none;
+  }
+  .header-rule {
+    height: 2.5px;
+    background: linear-gradient(90deg, var(--caramel) 0%, var(--caramel-light) 60%, transparent 100%);
+  }
+
+  /* ---- BODY ---- */
+  .resume-body {
+    background: #ffffff;
+    padding: 0.32in var(--margin-h) var(--margin-v);
+  }
+
+  /* ---- SECTION ---- */
+  .section {
+    margin-top: 0.16in;
+  }
+  .section:first-child {
+    margin-top: 0.18in;
+  }
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 3px;
+    margin-bottom: 0.05in;
+  }
+  .section-head h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--caramel);
+  }
+
+  /* ---- SUMMARY ---- */
+  .summary p {
+    font-family: 'Spectral', serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: var(--charcoal);
+    line-height: 1.75;
+  }
+
+  /* ---- COMPETENCIES ---- */
+  .competencies-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px 16px;
+  }
+  .competency-item {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.74rem;
+    font-weight: 400;
+    color: var(--charcoal);
+    line-height: 1.5;
+    padding-left: 10px;
+    position: relative;
+  }
+  .competency-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.42em;
+    width: 4px;
+    height: 4px;
+    background: var(--caramel);
+    border-radius: 50%;
+  }
+
+  /* ---- EXPERIENCE ---- */
+
+  .netapp-block {
+    border-left: 3px solid var(--caramel);
+    padding-left: 14px;
+    margin-left: -17px;
+  }
+  .employer-block {
+    margin-bottom: 0.12in;
+  }
+  .employer-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--caramel);
+    letter-spacing: 0.04em;
+    margin-bottom: 0.06in;
+  }
+  .role-block {
+    margin-bottom: 0.05in;
+  }
+  .role-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.04in;
+  }
+  .role-title {
+    font-family: 'Spectral', serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    font-style: italic;
+  }
+  .role-dates {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 400;
+    color: var(--stone);
+    white-space: nowrap;
+  }
+  .role-bullets {
+    list-style: none;
+    padding: 0;
+  }
+  .role-bullets li {
+    font-family: 'Spectral', serif;
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: #0D0D0D;
+    line-height: 1.6;
+    margin-bottom: 0.038in;
+    padding-left: 14px;
+    position: relative;
+  }
+  .role-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.46em;
+    width: 4px;
+    height: 4px;
+    background: var(--caramel-light);
+    border-radius: 50%;
+  }
+  .role-bullets li strong {
+    font-weight: 500;
+    color: var(--charcoal);
+  }
+  .role-single {
+    font-family: 'Spectral', serif;
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: var(--charcoal);
+    line-height: 1.6;
+    padding-left: 14px;
+    position: relative;
+    margin-top: 0.03in;
+  }
+  .role-single::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.46em;
+    width: 4px;
+    height: 4px;
+    background: var(--caramel-light);
+    border-radius: 50%;
+  }
+
+  /* ---- CREDENTIALS ---- */
+  .credential-block {
+    margin-bottom: 0.05in;
+  }
+  .credential-name {
+    font-family: 'Spectral', serif;
+    font-size: 0.84rem;
+    font-weight: 500;
+    color: var(--charcoal);
+    line-height: 1.4;
+  }
+  .credential-detail {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 400;
+    color: var(--stone);
+    margin-top: 1px;
+  }
+  .credential-scores {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.70rem;
+    font-weight: 400;
+    color: var(--caramel);
+    margin-top: 1px;
+    font-style: italic;
+  }
+  .learning-item {
+    font-family: 'Spectral', serif;
+    font-size: 0.81rem;
+    font-weight: 400;
+    color: var(--charcoal);
+    line-height: 1.6;
+    margin-bottom: 0.05in;
+    padding-left: 14px;
+    position: relative;
+  }
+  .learning-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.46em;
+    width: 4px;
+    height: 4px;
+    background: var(--caramel-light);
+    border-radius: 50%;
+  }
+  .learning-item strong {
+    font-weight: 500;
+    color: var(--charcoal);
+  }
+
+  /* ---- PRINT ---- */
+  @media print {
+    html { background: white; font-size: 12px; }
+    body { margin: 0; box-shadow: none; width: 100%; min-height: auto; }
+    .section { page-break-inside: avoid; }
+  
+  .netapp-block {
+    border-left: 3px solid var(--caramel);
+    padding-left: 14px;
+    margin-left: -17px;
+  }
+  .employer-block { page-break-inside: avoid; }
+  }
+
+  @page {
+    size: letter;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+
+<header class="resume-header">
+  <div class="header-inner">
+    <div>
+      <div class="header-name">Charles Hayes</div>
+      <div class="header-title">Product Marketing &nbsp;·&nbsp; Enterprise Technology &nbsp;·&nbsp; GTM Strategy</div>
+    </div>
+    <div class="header-contact">
+      <a href="mailto:hayes.charlese@gmail.com">hayes.charlese@gmail.com</a><br>
+      <a href="https://www.linkedin.com/in/hayesproductmarketing/" target="_blank">linkedin.com/in/hayesproductmarketing</a><br>
+      Murrieta, CA &nbsp;·&nbsp; 949-702-5494<br>
+      <span style="color:var(--caramel-light);font-size:0.68rem;letter-spacing:0.06em;text-transform:uppercase;">Writing portfolio available upon request</span>
+    </div>
+  </div>
+  <div class="header-rule"></div>
+</header>
+
+<div class="resume-body">
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-head"><h2>Professional Summary</h2></div>
+    <div class="summary">
+      <p>Product marketing leader with 15+ years working across the full arc of data storage, from consumer external drives and SMB NAS through enterprise cloud data services and ONTAP as a cross-platform data plane. That continuity is not accidental. Data mobility, data protection, data governance, and the infrastructure that makes data useful at scale have been the throughline of an entire career, and it is what makes the current AI infrastructure conversation a natural extension rather than a pivot. Deep experience translating technically complex platforms into clear market narratives through published corporate blog content, executive ghostwriting for C-suite and SVP engineering leaders, and analyst relations copy. Strong track record partnering with product management, engineering, sales, and channel teams on positioning, launches, and portfolio strategy across hardware, software, and cloud services.</p>
+    </div>
+  </div>
+
+  <!-- COMPETENCIES -->
+  <div class="section">
+    <div class="section-head"><h2>Core Competencies</h2></div>
+    <div class="competencies-grid">
+      <div class="competency-item">Product Marketing Strategy</div>
+      <div class="competency-item">Executive Ghostwriting (SVP/VP/C-Suite)</div>
+      <div class="competency-item">AI Infrastructure &amp; Data Platform GTM</div>
+      <div class="competency-item">Product Positioning &amp; Messaging</div>
+      <div class="competency-item">Sustainability &amp; ESG Narrative Strategy</div>
+      <div class="competency-item">Cloud Data Services Marketing</div>
+      <div class="competency-item">Go-to-Market Strategy &amp; Launch</div>
+      <div class="competency-item">Analyst Relations Content (GigaOm, Gartner, IDC)</div>
+      <div class="competency-item">Technical Storytelling &amp; Sales Enablement</div>
+      <div class="competency-item">Multi-Agent AI Workflow Orchestration</div>
+      <div class="competency-item">Enterprise SaaS &amp; Hybrid Cloud GTM</div>
+      <div class="competency-item">Agency &amp; Creative Production Management</div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-head"><h2>Professional Experience</h2></div>
+
+    <!-- NetApp -->
+      <div class="employer-block netapp-block">
+      <div class="employer-name">NetApp</div>
+
+      <div class="role-block">
+        <div class="role-header">
+          <div class="role-title">Senior Product Marketing Manager, Core ONTAP Platforms</div>
+          <div class="role-dates">2023 – 2026</div>
+        </div>
+        <ul class="role-bullets">
+          <li><strong>Messaging Architecture:</strong> Led comprehensive messaging for flagship ONTAP hardware platforms, driving a strategic portfolio shift from version-isolated software releases to a unified, platform-centric value story aligned with enterprise buyer needs.</li>
+          <li><strong>Shift-Left GTM Orchestration:</strong> Integrated product marketing early into the product requirements phase, partnering with product management to co-develop commercial strategy, technical messaging, and launch planning well ahead of general availability.</li>
+          <li><strong>Global Sales Enablement:</strong> Maintained ownership of the global sales Bill of Materials (BOM) for core ONTAP software across all major product cycles.</li>
+          <li><strong>Sustainability Content Strategy:</strong> Initiated and owned a two-year sustainability content strategy across multiple product lines, translating technical metrics into high-impact ESG narratives that captured competitive enterprise deals. Five published pieces on the NetApp corporate blog.</li>
+        </ul>
+      </div>
+
+      <div class="role-block">
+        <div class="role-header">
+          <div class="role-title">Product Marketing Manager, Cloud Data Services</div>
+          <div class="role-dates">2019 – 2023</div>
+        </div>
+        <ul class="role-bullets">
+          <li><strong>Hyperscaler Portfolio Strategy:</strong> Drove positioning and messaging for Cloud Volumes ONTAP (CVO), helping sales and enterprise customers navigate complex portfolio choices across AWS, Azure, and Google Cloud.</li>
+          <li><strong>High-Growth GTM Execution:</strong> Owned go-to-market strategy for the cloud data protection portfolio during rapid market expansion, supporting multiple consecutive quarters of triple-digit customer adoption under the unified BlueXP platform.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- NextPM -->
+    <div class="employer-block">
+      <div class="employer-name">NextPM Consulting</div>
+      <div class="role-block">
+        <div class="role-header">
+          <div class="role-title">Principal Consultant, Product Strategy &amp; GTM Advisory</div>
+          <div class="role-dates">2014 – 2026</div>
+        </div>
+        <ul class="role-bullets">
+          <li><strong>Disruptive Market Expansion:</strong> Advised boutique optical transceiver manufacturers on GTM strategies to penetrate the high-margin flash memory aftermarket and challenge legacy, proprietary vendor lock-in.</li>
+          <li><strong>AI-Orchestrated Marketing Execution:</strong> Directed a multi-agent AI workflow, orchestrating specialized agents across distinct functional domains to accelerate GTM deliverables and drive high-impact marketing outcomes at consulting velocity.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Earlier roles -->
+    <div class="employer-block">
+      <div class="employer-name">Lenovo</div>
+      <div class="role-block">
+        <div class="role-header">
+          <div class="role-title">Worldwide Marketing Program Manager</div>
+          <div class="role-dates">2012 – 2013</div>
+        </div>
+        <div class="role-single">Led a six-person global marketing team to launch 9 NAS products in 12 months while supporting a major corporate rebrand, coordinating execution across teams, markets, and launch activities.</div>
+      </div>
+    </div>
+
+    <div class="employer-block">
+      <div class="employer-name">EMC / Iomega</div>
+      <div class="role-block">
+        <div class="role-header">
+          <div class="role-title">Director of Marketing, LenovoEMC Joint Venture</div>
+          <div class="role-dates">2012</div>
+        </div>
+        <div class="role-single">Led marketing operational alignment, brand migration, and creative assets for the newly formed joint venture during a critical six-month corporate transition phase.</div>
+      </div>
+      <div class="role-block">
+        <div class="role-header">
+          <div class="role-title">Global Product Manager IV (Principal PM)</div>
+          <div class="role-dates">2010 – 2012</div>
+        </div>
+        <div class="role-single">Authored market and product requirements and managed hardware lifecycle planning for global storage products, partnering with ODMs including Foxconn to support design-for-manufacturing and large-scale product delivery.</div>
+      </div>
+      <div class="role-block">
+        <div class="role-header">
+          <div class="role-title">Regional Product Manager, Americas</div>
+          <div class="role-dates">2008 – 2010</div>
+        </div>
+        <div class="role-single">Managed full regional P&amp;L, pricing, and forecasting for the storage portfolio, scaling regional market share to over 15% during the EMC acquisition integration.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CREDENTIALS -->
+  <div class="section">
+    <div class="section-head"><h2>Education &amp; Professional Credentials</h2></div>
+
+    <div class="credential-block">
+      <div class="credential-name">Pragmatic Management Certified (PMC-II)</div>
+      <div class="credential-detail">Pragmatic Institute</div>
+      <div class="credential-scores">Foundations: 100% &nbsp;·&nbsp; Market: 95%</div>
+    </div>
+
+    <div class="credential-block" style="margin-top:0.06in;">
+      <div class="credential-name">Pragmatic Institute: Practical Product Management &nbsp;·&nbsp; Requirements That Work</div>
+      <div class="credential-detail">Foundational product management training, 2005</div>
+    </div>
+
+    <div class="credential-block" style="margin-top:0.06in;">
+      <div class="credential-name">Some College, Orange Coast College, Costa Mesa CA</div>
+    </div>
+
+    <div style="margin-top:0.08in;">
+        <div class="learning-item">Continuous study across AI infrastructure and governance, agentic frameworks, data pipeline architecture, NVM and hybrid cloud systems, ML workload optimization, and emerging compute paradigms.</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body></html>
